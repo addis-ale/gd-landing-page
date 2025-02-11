@@ -15,6 +15,7 @@ export default {
         pureBlack: "#070917",
         softWhite: "#E8F7FB",
         vibrantBlue: "#6F7DFB",
+        darkBlue: "#3B448F",
       },
     },
   },

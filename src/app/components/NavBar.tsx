@@ -17,7 +17,7 @@ const navigationLink = [
 ];
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center py-3 px-8 ">
+    <div className="flex justify-between items-center py-3 px-8 sm:px-0 sm:py-0 ">
       <div className="raleway font-black text-[40px] text-white">GD.</div>
       <div className="hidden sm:flex items-center gap-8 sm:gap-[40px]">
         <ul className="flex items-center gap-8 sm:gap-[40px]">
