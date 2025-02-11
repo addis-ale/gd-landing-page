@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "./Button";
 
 const navigationLink = [
   {
@@ -26,9 +27,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <button className="flex items-center justify-center px-4 py-2 bg-darkGray rounded-[24px] text-[16px] sm:text-[18px] font-bold text-white">
-          Enroll now
-        </button>
+        <Button label="Enroll now" background="darkGray" />
       </div>
       <div className="flex sm:hidden w-10 h-10 relative">
         <Image src={"/MenuAlt4Outline.svg"} fill alt="menu" />
