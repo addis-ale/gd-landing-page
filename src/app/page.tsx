@@ -24,11 +24,18 @@ export default function Home() {
                 <Button label="Enroll now" iconSrc="/pencilAlt.svg" />
               </div>
             </div>
-            <div className="flex justify-center basis-1/2 md:basis-[60%">
-              <div>
+            <div className="flex justify-center basis-1/2 md:basis-[60%]">
+              <div className="flex flex-col gap-32 pt-10 justify-center">
                 <Achievement star="32K" label="Students Enrolled" />
+                <div className="md:ml-[-25px]">
+                  <Achievement
+                    star="4.7"
+                    label="Overall Rating"
+                    iconSrc="/star.svg"
+                  />
+                </div>
               </div>
-              <div className="relative w-[320px] sm:w-[400px] md:w-[446px] h-[420px] sm:h-[500px] md:h-[582px]">
+              <div className="relative w-[320px] sm:w-[400px] md:w-[446px] h-[420px] sm:h-[500px] md:h-[582px] justify-end">
                 <Image
                   src="/hero-image1.png"
                   fill

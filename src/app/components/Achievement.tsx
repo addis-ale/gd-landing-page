@@ -10,7 +10,7 @@ const Achievement = ({ star, label, iconSrc }: AchievementProps) => {
   return (
     <div className="relative inline-block">
       {/* Shadow effect to the bottom and right */}
-      <div className="absolute top-0 left-2 h-[110%] w-full bg-gradient-to-br from-vibrantBlue to-darkBlue opacity-40 rounded-[24px]"></div>
+      <div className="absolute top-0 left-2 h-[110%] w-full bg-gradient-to-b from-vibrantBlue to-darkBlue opacity-40 rounded-[24px]"></div>
 
       {/* Main content */}
       <div className="bg-white flex flex-col items-center px-8 py-2 relative z-10 shadow-md rounded-[24px]">
