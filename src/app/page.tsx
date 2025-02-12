@@ -50,7 +50,7 @@ export default function Home() {
       </div>
 
       {/* Testimonial Section */}
-      <div className="bg-white flex flex-cols cusomemd:flex-row gap-11 px-6 sm:px-12 md:px-[60px] py-12 justify-center items-center">
+      <div className="bg-white flex flex-col customemd:flex-row  gap-11 px-6 sm:px-12 md:px-[60px] py-12 justify-center items-center">
         {/* Left Side: Testimonial Component */}
         <div className="relative">
           {/* The bar behind the testimonials */}
@@ -63,7 +63,7 @@ export default function Home() {
               job="Developer, Sony"
               name="Jane Copper"
             />
-            <div className="z-10 customemd:pl-4">
+            <div className="z-10 md:pl-4">
               <Testimonial
                 avatarSrc="/Ellipse2.png"
                 header="Amazing Work! Well done!"
