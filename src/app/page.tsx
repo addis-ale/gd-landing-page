@@ -51,7 +51,12 @@ export default function Home() {
       <div className="bg-white grid grid-cols-1 md:grid-cols-2 gap-10 px-6 sm:px-12 md:px-[60px] py-12">
         {/* Left Side: Testimonial Component */}
         <div className="flex justify-center">
-          <Testimonial />
+          <Testimonial
+            avatarSrc="/Ellipse1.png"
+            header="This is a great course. It helped me alot. Thank you :)"
+            job="Developer, Sony"
+            name="Jane Copper"
+          />
         </div>
 
         {/* Right Side: Text & Button */}
