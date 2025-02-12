@@ -5,6 +5,7 @@ import Navbar from "./components/NavBar";
 import Achievement from "./components/Achievement";
 import Testimonial from "./components/Testimonial";
 import CourseCard from "./components/CourseCard";
+import AppComponent from "./components/AppComponent";
 
 export default function Home() {
   return (
@@ -110,6 +111,21 @@ export default function Home() {
             imgSrc="/joyStick_img.png"
             title="Unity Gaming Engine Fundamentals"
           />
+        </div>
+      </div>
+      {/* app section */}
+      <div className="bg-white flex justify-center items-center py-10">
+        <div className="flex flex-col gap-4 justify-center items-center">
+          <h1 className="raleway text-[60px] font-black text-darkGray">
+            Get our App
+          </h1>
+          <p className="text-[16px] text-darkGray">
+            You can use our App for better experience on smartphones
+          </p>
+          <div className="flex gap-4">
+            <AppComponent label="App Store" iconSrc="/vector.svg" />
+            <AppComponent label="Google Play" iconSrc="/playStore.svg" />
+          </div>
         </div>
       </div>
     </div>
