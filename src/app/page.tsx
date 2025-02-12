@@ -102,8 +102,14 @@ export default function Home() {
           Our Courses
         </h1>
         <div className="flex flex-col md:flex-row justify-center items-center gap-8">
-          <CourseCard />
-          <CourseCard />
+          <CourseCard
+            title=" Game Design Essentials"
+            imgSrc="/kids_image1.png"
+          />
+          <CourseCard
+            imgSrc="/joyStick_img.png"
+            title="Unity Gaming Engine Fundamentals"
+          />
         </div>
       </div>
     </div>

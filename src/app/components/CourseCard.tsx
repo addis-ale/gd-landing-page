@@ -1,22 +1,27 @@
 import Image from "next/image";
-
-const CourseCard = () => {
+interface CourseCardProps {
+  imgSrc: string;
+  title: string;
+}
+const CourseCard = ({ imgSrc, title }: CourseCardProps) => {
   return (
-    <div className="flex flex-col bg-white rounded-2xl  px-4 pt-0 pb-5 w-full max-w-sm relative">
+    <div className="flex flex-col bg-white rounded-2xl   pt-0 pb-5 w-[326px] px-[16px] h-[218px] relative">
       {/* Image Container */}
-      <div className="relative w-full h-[200px] mb-4">
-        <Image
-          src="/kids_image1.png"
-          alt="kids"
-          layout="fill"
-          objectFit="cover"
-          className="rounded-2xl mt-[-1px]"
-        />
-      </div>
+      {imgSrc && (
+        <div className="relative w-full h-[200px] mb-4">
+          <Image
+            src={`${imgSrc}`}
+            alt="kids"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-2xl mt-[-1px]"
+          />
+        </div>
+      )}
 
       {/* Course Title */}
       <div className="text-xl font-bold text-darkGray mb-2 w-full ">
-        Game Design Essentials
+        {title}
       </div>
 
       {/* Time Info */}
