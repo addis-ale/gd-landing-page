@@ -4,6 +4,7 @@ import Container from "./components/Container";
 import Navbar from "./components/NavBar";
 import Achievement from "./components/Achievement";
 import Testimonial from "./components/Testimonial";
+import CourseCard from "./components/CourseCard";
 
 export default function Home() {
   return (
@@ -93,6 +94,16 @@ export default function Home() {
           <div>
             <Button label="Enroll now" />
           </div>
+        </div>
+      </div>
+      {/* Course component */}
+      <div className="bg-gradient-to-b from-vibrantBlue to-deepBlue flex flex-col py-8 gap-4">
+        <h1 className="font-black raleway text-white text-[60px] flex justify-center">
+          Our Courses
+        </h1>
+        <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+          <CourseCard />
+          <CourseCard />
         </div>
       </div>
     </div>
