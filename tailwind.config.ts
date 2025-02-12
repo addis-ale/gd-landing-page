@@ -17,6 +17,9 @@ export default {
         vibrantBlue: "#6F7DFB",
         darkBlue: "#3B448F",
       },
+      screens: {
+        customemd: "1100px",
+      },
     },
   },
   plugins: [],
