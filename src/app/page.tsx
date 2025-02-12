@@ -48,20 +48,36 @@ export default function Home() {
           </div>
         </Container>
       </div>
-      <div className="bg-white grid grid-cols-1 md:grid-cols-2 gap-10 px-6 sm:px-12 md:px-[60px] py-12">
+
+      {/* Testimonial Section */}
+      <div className="bg-white flex flex-cols cusomemd:flex-row gap-11 px-6 sm:px-12 md:px-[60px] py-12 justify-center items-center">
         {/* Left Side: Testimonial Component */}
-        <div className="flex justify-center">
-          <Testimonial
-            avatarSrc="/Ellipse1.png"
-            header="This is a great course. It helped me alot. Thank you :)"
-            job="Developer, Sony"
-            name="Jane Copper"
-          />
+        <div className="relative">
+          {/* The bar behind the testimonials */}
+          <div className="bg-darkGray h-full rounded-full absolute left-10 w-4 z-0"></div>
+          {/* Testimonial Content */}
+          <div className="flex gap-10 flex-col py-5 z-50">
+            <Testimonial
+              avatarSrc="/Ellipse1.png"
+              header="This is a great course. It helped me a lot. Thank you :)"
+              job="Developer, Sony"
+              name="Jane Copper"
+            />
+            <div className="z-10 customemd:pl-4">
+              <Testimonial
+                avatarSrc="/Ellipse2.png"
+                header="Amazing Work! Well done!"
+                job="Designer, Facebood"
+                name="Jacop James"
+                background="orangeRed"
+              />
+            </div>
+          </div>
         </div>
 
         {/* Right Side: Text & Button */}
-        <div className="flex flex-col gap-6">
-          <p className="raleway text-[40px] sm:text-[50px] md:text-[60px] text-darkGray font-black">
+        <div className="flex flex-col gap-6 max-w-xl">
+          <p className="raleway text-[40px] sm:text-[50px] md:text-[50px] text-darkGray font-black">
             What our students say
           </p>
           <div className="flex flex-col gap-4 text-darkGray text-lg">

@@ -13,7 +13,7 @@ const Button = ({ background = "orangeRed", label, iconSrc }: buttonProps) => {
   return (
     <button
       className={`flex items-center justify-center px-4 py-2 ${
-        bgColors[background] || "bg-red-500"
+        bgColors[background] || "bg-orangeRed"
       } rounded-[24px] text-[16px] sm:text-[18px] font-bold text-white gap-2`}
     >
       {iconSrc && (
